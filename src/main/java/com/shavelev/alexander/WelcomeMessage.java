@@ -26,17 +26,17 @@ public class WelcomeMessage extends Message {
     }
 
     public static String getWelcomeMessage(Message message) {
-        int c = message.getLocalHours();
-        if ((c >= 6) && (c < 9)) {
+        int hoursCount = message.getLocalHours();
+        if ((hoursCount >= 6) && (hoursCount < 9)) {
            return ResourceBundle.getBundle("messages", Locale.getDefault()).getString("morning");
         }
-        else if ((c >= 9) && (c < 19)) {
+        else if ((hoursCount >= 9) && (hoursCount < 19)) {
            return ResourceBundle.getBundle("messages", Locale.getDefault()).getString("day");
         }
-        else if ((c >= 19) && (c < 23)) {
+        else if ((hoursCount >= 19) && (hoursCount < 23)) {
             return ResourceBundle.getBundle("messages", Locale.getDefault()).getString("evening");
         }
-        else if ((c >= 23) && (c < 6)) {
+        else if ((hoursCount >= 23) && (hoursCount < 6)) {
             return ResourceBundle.getBundle("messages", Locale.getDefault()).getString("night");
         }
         else { return "invalid time";}
