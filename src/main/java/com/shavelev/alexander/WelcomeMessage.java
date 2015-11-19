@@ -2,11 +2,13 @@ package com.shavelev.alexander;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
 
 /**
  * Created by user on 18.11.15.
  */
 public class WelcomeMessage extends Message {
+//    private static final Logger log = Logger.getLogger(WelcomeMessage.class);
     int currentLocalHours;
 
     public WelcomeMessage(int currentLocalHours) {
@@ -36,9 +38,11 @@ public class WelcomeMessage extends Message {
         else if ((hoursCount >= 19) && (hoursCount < 23)) {
             return ResourceBundle.getBundle("messages", Locale.getDefault()).getString("evening");
         }
-        else if ((hoursCount >= 23) && (hoursCount < 6)) {
+        else if ((hoursCount >= 23) || (hoursCount < 6)) {
             return ResourceBundle.getBundle("messages", Locale.getDefault()).getString("night");
         }
-        else { return "invalid time";}
+        else {
+//            log.info("invalit time " + hoursCount + ", app wont crash");
+            return "invalid time";}
     }
 }
