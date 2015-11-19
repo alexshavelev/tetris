@@ -2,13 +2,14 @@ package com.shavelev.alexander;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
  * Created by user on 18.11.15.
  */
 public class WelcomeMessage extends Message {
-//    private static final Logger log = Logger.getLogger(WelcomeMessage.class);
+    private static final Logger log = Logger.getLogger(String.valueOf(WelcomeMessage.class));
     int currentLocalHours;
 
     public WelcomeMessage(int currentLocalHours) {
@@ -42,7 +43,8 @@ public class WelcomeMessage extends Message {
             return ResourceBundle.getBundle("messages", Locale.getDefault()).getString("night");
         }
         else {
-//            log.info("invalit time " + hoursCount + ", app wont crash");
+            // we user warning (not error) cause its user error, not system fail
+            log.warning("invalid time " + hoursCount + ", app wont crash");
             return "invalid time";}
     }
 }

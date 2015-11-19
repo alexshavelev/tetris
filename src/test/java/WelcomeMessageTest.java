@@ -11,7 +11,7 @@ import static junit.framework.Assert.*;
 
 public class WelcomeMessageTest {
 
-    @Test(timeout = 100)
+    @Test(timeout = 200)
     public void testGetWelcomeMessage() throws Exception {
         for (int i = 6; i < 9; i++) {
             WelcomeMessage welcomeMessage = new WelcomeMessage(i);
