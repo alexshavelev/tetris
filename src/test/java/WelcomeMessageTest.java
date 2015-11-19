@@ -50,6 +50,10 @@ public class WelcomeMessageTest {
             } else {
                 assertEquals("Доброй ночи, мир!", result);}
         }
+
+        WelcomeMessage welcomeMessage = new WelcomeMessage(500);
+        String result = WelcomeMessage.getWelcomeMessage(welcomeMessage);
+        assertEquals("invalid time", result);
     }
 
 

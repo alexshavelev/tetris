@@ -39,7 +39,7 @@ public class WelcomeMessage extends Message {
         else if ((hoursCount >= 19) && (hoursCount < 23)) {
             return ResourceBundle.getBundle("messages", Locale.getDefault()).getString("evening");
         }
-        else if ((hoursCount >= 23) || (hoursCount < 6)) {
+        else if ((hoursCount == 23) || ((hoursCount < 6) && (hoursCount >= 0))) {
             return ResourceBundle.getBundle("messages", Locale.getDefault()).getString("night");
         }
         else {
