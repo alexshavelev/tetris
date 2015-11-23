@@ -1,4 +1,4 @@
-package com.shavelev.alexander;
+package com.shavelev.alexander.messages;
 
 import com.shavelev.alexander.messages.DayWelcomeMessage;
 import com.shavelev.alexander.messages.EveningWelcomeMessage;
@@ -11,7 +11,7 @@ import java.util.logging.Logger;
  * Created by user on 23.11.15.
  */
 public class WelcomeMessageCreator implements MessageCreator {
-    private static final Logger LOG = Logger.getLogger(String.valueOf(WelcomeMessage.class));
+    private static final Logger LOG = Logger.getLogger(String.valueOf(WelcomeMessageCreator.class));
 
     @Override
     public Message getMessage(int hoursCount) {

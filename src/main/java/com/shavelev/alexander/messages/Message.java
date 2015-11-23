@@ -1,4 +1,4 @@
-package com.shavelev.alexander;
+package com.shavelev.alexander.messages;
 
 /**
  * Created by user on 23.11.15.

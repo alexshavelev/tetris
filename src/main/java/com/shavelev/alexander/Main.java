@@ -4,6 +4,8 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
+import com.shavelev.alexander.messages.WelcomeMessageCreator;
+import com.shavelev.alexander.messages.Message;
 
 /**
  * Created by user on 18.11.15.

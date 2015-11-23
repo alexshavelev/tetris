@@ -1,11 +1,10 @@
 package com.shavelev.alexander.messages;
 
-import com.shavelev.alexander.Message;
+import com.shavelev.alexander.messages.Message;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import static java.util.Locale.getDefault;
 
 /**
  * Created by user on 23.11.15.

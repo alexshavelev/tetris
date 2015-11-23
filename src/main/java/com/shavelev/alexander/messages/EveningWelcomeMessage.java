@@ -1,6 +1,6 @@
 package com.shavelev.alexander.messages;
 
-import com.shavelev.alexander.Message;
+import com.shavelev.alexander.messages.Message;
 
 import java.util.Locale;
 import java.util.ResourceBundle;

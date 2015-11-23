@@ -2,10 +2,10 @@
  * Created by user on 19.11.15.
  */
 
-import com.shavelev.alexander.WelcomeMessage;
-import com.shavelev.alexander.WelcomeMessageCreator;
+import com.shavelev.alexander.messages.WelcomeMessageCreator;
 import org.junit.Test;
 
+import java.util.Date;
 import java.util.Locale;
 
 import static junit.framework.Assert.*;
@@ -21,7 +21,7 @@ public class WelcomeMessageTest {
     @Test
     public void testMorningMessage() throws Exception {
         WelcomeMessageCreator welcomeMessageCreator = new WelcomeMessageCreator();
-        String result = "";
+        String result;
         String lang = Locale.getDefault().getLanguage();
         for (int i = 6; i < 9; i++) {
             result = welcomeMessageCreator.getMessage(i).getWelcomeMessage();
@@ -38,7 +38,7 @@ public class WelcomeMessageTest {
     @Test
     public void testDayMessage() throws Exception {
         WelcomeMessageCreator welcomeMessageCreator = new WelcomeMessageCreator();
-        String result = "";
+        String result;
         String lang = Locale.getDefault().getLanguage();
         for (int i = 9; i < 19; i++) {
             result = welcomeMessageCreator.getMessage(i).getWelcomeMessage();
@@ -55,7 +55,7 @@ public class WelcomeMessageTest {
     @Test
     public void testEveningMessage() throws Exception {
         WelcomeMessageCreator welcomeMessageCreator = new WelcomeMessageCreator();
-        String result = "";
+        String result;
         String lang = Locale.getDefault().getLanguage();
         for (int i = 19; i < 23; i++) {
             result = welcomeMessageCreator.getMessage(i).getWelcomeMessage();
@@ -72,7 +72,7 @@ public class WelcomeMessageTest {
     @Test
     public void testNightMessage() throws Exception {
         WelcomeMessageCreator welcomeMessageCreator = new WelcomeMessageCreator();
-        String result = "";
+        String result;
         String lang = Locale.getDefault().getLanguage();
         int[] hours = {23, 0, 1, 2, 3, 4, 5};
         for (int i = 0; i < hours.length; i++) {
@@ -88,12 +88,10 @@ public class WelcomeMessageTest {
     }
 
     @Test(expected = Exception.class)
-    public void testCrashProgramm() throws Exception {
+    public void testCrashProgram() throws Exception {
         int invalidHour = 500;
         WelcomeMessageCreator welcomeMessageCreator = new WelcomeMessageCreator();
         welcomeMessageCreator.getMessage(invalidHour).getWelcomeMessage();
     }
-
-
 
 }
