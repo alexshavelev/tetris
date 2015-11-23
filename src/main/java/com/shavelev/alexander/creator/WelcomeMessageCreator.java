@@ -1,5 +1,6 @@
-package com.shavelev.alexander.messages;
+package com.shavelev.alexander.creator;
 
+import com.shavelev.alexander.messages.Message;
 import com.shavelev.alexander.messages.DayWelcomeMessage;
 import com.shavelev.alexander.messages.EveningWelcomeMessage;
 import com.shavelev.alexander.messages.MorningWelcomeMessage;
@@ -26,6 +27,7 @@ public class WelcomeMessageCreator implements MessageCreator {
         } else {
             // we user warning (not error) cause its user error, not system fail
             LOG.warning("invalid time " + hoursCount + ", app wont crash");
-            return null;}
+            return null;
+        }
     }
 }

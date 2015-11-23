@@ -2,7 +2,7 @@
  * Created by user on 19.11.15.
  */
 
-import com.shavelev.alexander.messages.WelcomeMessageCreator;
+import com.shavelev.alexander.creator.WelcomeMessageCreator;
 import org.junit.Test;
 
 import java.util.Date;

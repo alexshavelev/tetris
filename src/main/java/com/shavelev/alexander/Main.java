@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
-import com.shavelev.alexander.messages.WelcomeMessageCreator;
+import com.shavelev.alexander.creator.WelcomeMessageCreator;
 import com.shavelev.alexander.messages.Message;
 
 /**

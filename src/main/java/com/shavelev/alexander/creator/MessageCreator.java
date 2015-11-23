@@ -1,4 +1,5 @@
-package com.shavelev.alexander.messages;
+package com.shavelev.alexander.creator;
+import com.shavelev.alexander.messages.Message;
 
 /**
  * Created by user on 23.11.15.
