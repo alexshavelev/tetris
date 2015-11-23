@@ -1,11 +1,16 @@
 package com.shavelev.alexander;
 
 /**
- * Created by user on 18.11.15.
+ * Created by user on 23.11.15.
  */
-public abstract class Message {
-    int currentLocalHours;
+public interface Message {
+    /**
+     * @return welcome message to user depends on time and lang
+     */
+    String getWelcomeMessage();
 
-    abstract void printMessage();
-    abstract int getLocalHours();
+    /**
+     * print welcome message to user in console
+     */
+    void printMessage();
 }
