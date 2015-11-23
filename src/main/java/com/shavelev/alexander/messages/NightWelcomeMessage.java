@@ -16,8 +16,4 @@ public class NightWelcomeMessage extends Message {
         return NIGHT;
     }
 
-    @Override
-    public void printMessage() {
-        System.out.println(getWelcomeMessage());
-    }
 }

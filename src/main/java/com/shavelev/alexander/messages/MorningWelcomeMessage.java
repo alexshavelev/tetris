@@ -16,8 +16,4 @@ public class MorningWelcomeMessage extends Message {
         return MORNING;
     }
 
-    @Override
-    public void printMessage() {
-        System.out.println(getWelcomeMessage());
-    }
 }

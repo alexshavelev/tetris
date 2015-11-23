@@ -17,8 +17,4 @@ public class DayWelcomeMessage extends Message {
         return DAY;
     }
 
-    @Override
-    public void printMessage() {
-       System.out.println(getWelcomeMessage());
-    }
 }

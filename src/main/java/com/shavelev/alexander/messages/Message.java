@@ -25,7 +25,9 @@ public abstract class Message {
     }
 
     public abstract String getRecipient();
-    public abstract void printMessage();
+    public void printMessage() {
+        System.out.println(getWelcomeMessage());
+    }
 
 
 }
