@@ -94,11 +94,6 @@ public class WelcomeMessageTest {
         welcomeMessageCreator.getMessage(invalidHour).getWelcomeMessage();
     }
 
-//
-//        WelcomeMessage welcomeMessage = new WelcomeMessage(500);
-//        String result = WelcomeMessage.getWelcomeMessage(welcomeMessage);
-//        assertEquals("invalid time", result);
-//    }
 
 
 }
