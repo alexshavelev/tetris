@@ -41,7 +41,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.shavelev.alexander.Main</mainClass>
+                            <mainClass>com.shavelev.alexander.Space</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
